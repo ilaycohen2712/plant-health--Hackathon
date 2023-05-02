@@ -10,3 +10,8 @@ lack of sleep for 24 hours.
 We all learned a lot from the hackathon about coding, thinking like a data scientists and mainly how to co-operate as a
 team.
 
+
+[![Video of the Project](https://i.vimeocdn.com/video/VIDEO_THUMBNAIL.jpg)](https://vimeo.com/823002108)
+
+
+

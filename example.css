@@ -1,0 +1,186 @@
+body {
+    
+    padding: 0;
+    margin: 0;
+    background:linear-gradient(to left,black,black);
+
+}
+
+.face {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 150px;
+    margin:auto; /*make the face of the robot in the center of the page*/
+    height: 40px;
+    width: 65px;
+    background:black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+.head {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 150px;
+    margin:auto; /*make the face of the robot in the center of the page*/
+    height: 75px; /*make the head a little more height then the face*/
+    width: 100px;
+    background:white;
+    z-index: -1;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+.body2 {
+    position: absolute;
+    top:60px;
+    left:0;
+    right:0;
+    bottom: 0px;
+    margin:auto; /*make the face of the robot in the center of the page*/
+    height: 120px;
+    width: 115px;
+    background:white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+
+}
+.left {
+    position: absolute;
+    top:0;
+    left:0;
+    right:230px;
+    bottom: 25px;
+    margin:auto; /*make the face of the robot in the center of the page*/
+    height: 30px;
+    width: 100px;
+    background:white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 10px;
+    animation:hand 1s linear infinite;
+}
+.right {
+    position: absolute;
+    top:50px;
+    left:165px;
+    right:0;
+    bottom:0;
+    margin:auto; /*make the face of the robot in the center of the page*/
+    height: 30px;
+    width: 100px;
+    background:white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 50px;
+    transform: rotateZ(90deg);
+
+}
+@keyframes hand{ /*שלב האנימציה עצמה */
+    0%{
+        transform:translateY(-40px) rotateZ(45deg);
+    }
+    50%{
+        transform:translateY(0px) rotateZ(-0deg);
+    }
+    100%{
+        transform:translateY(-40px) rotateZ(45deg);
+    }
+
+}
+.eye1 {
+    position: absolute;
+    top:0;
+    left:0;
+    right:25px;
+    bottom: 150px;
+    margin: auto;
+    background: repeating-linear-gradient(blue 70%, #002966 80% ,blue);
+    height: 10px;
+    width: 15px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.eye2 {
+    position: absolute;
+    top:0;
+    left:25px;
+    right:0;
+    bottom: 150px;
+    margin: auto;
+    background: repeating-linear-gradient(blue 70%, #002966 80% ,blue);
+    height: 10px;
+    width: 15px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.id {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: fantasy;
+    font-size: 3em;
+  }
+body {
+    display:flex;
+    justify-content: center;
+    align-items:last baseline;
+    min-height: 100vh;
+}
+h2 {
+    position: relative;
+    text-transform: uppercase;
+    width:100%;
+    color:rgb(37, 36, 36);
+    text-align: center;
+    font-family: fantasy;
+    font-size: 2em;
+    -webkit-box-reflect: below -45px linear-gradient(transparent,#0044);
+    
+}
+h2 span {
+    animation: animate 5s linear infinite; /*לקבוע מה תיהיה האנימציה */
+
+
+}
+h2 span:nth-child(even)
+{
+    animation-delay: 0.4s;
+}
+@keyframes animate 
+{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+        color: rgb(37, 36, 36);
+        text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+        color: pink;
+        text-shadow: 0 0 10px rgba(175, 175, 184, 0.267) ,
+        0 0 20px rgba(175, 175, 184, 0.267),
+        0 0 400px rgba(175, 175, 184, 0.267),
+        0 0 80px rgba(175, 175, 184, 0.267),
+        0 0 160px rgba(175, 175, 184, 0.267),
+        0 0 400px rgba(175, 175, 184, 0.267);
+    }
+}
+
+
+  
+
+  

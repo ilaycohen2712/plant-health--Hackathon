@@ -1,0 +1,221 @@
+.image-container {
+    background-image: url("./img/mystyleplant.jpeg"); /* The image used - important! */
+    background-size: cover;
+    position: relative; /* Needed to position the cutout text in the middle of the image */
+    height: 300px; /* Some height */
+  }
+  
+  .text {
+    background-color: rgba(245, 245, 245, 0.596);
+    color: black;
+    font-size: 10vw; /* Responsive font size */
+    font-weight: bold;
+    margin: 0 auto; /* Center the text container */
+    padding: 10px;
+    width: 50%;
+    text-align: center; /* Center text */
+    position: absolute; /* Position text */
+    top: 50%; /* Position text in the middle */
+    left: 50%; /* Position text in the middle */
+    transform: translate(-50%, -50%); /* Position text in the middle */
+    mix-blend-mode: screen; /* This makes the cutout text possible */
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    margin-bottom: 0px;
+    border-radius: 25px;
+    }
+  .flip-box1 {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    border-radius: 25px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border-radius: 25px;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box1:hover .flip-box-inner1 {
+    transform: rotateY(180deg);
+    border-radius: 25px;
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front1, .flip-box-back1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    border-radius: 25px;
+  }
+  
+  /* Style the front side */
+  .flip-box-front1 {
+    background-color: rgba(77, 170, 77, 0.856);
+    color: black;
+    border-radius: 25px;
+  }
+  
+  /* Style the back side */
+  .flip-box-back1 {
+    background-image: url("./img/doctornew.jpeg.jpg");
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 25px;
+  }
+  .flip-box-front1, .flip-box-text1 {
+    text-align: center;
+    font-family: Copperplate, Copperplate Gothic Light, fantasy;
+    border-radius: 25px; /*עיגול קצוות של הקופסא*/
+  }
+
+    .flip-box2 {
+        background-color: transparent;
+        width: 200px;
+        height: 200px;
+        border: 1px solid #f1f1f1;
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+        border-radius: 25px;
+      }
+      
+      /* This container is needed to position the front and back side */
+      .flip-box-inner2 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+        border-radius: 25px;
+      }
+      
+      /* Do an horizontal flip when you move the mouse over the flip box container */
+      .flip-box2:hover .flip-box-inner2 {
+        transform: rotateY(180deg);
+        border-radius: 25px;
+      }
+      
+      /* Position the front and back side */
+      .flip-box-front2, .flip-box-back2 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+        border-radius: 25px;
+      }
+      
+      /* Style the front side */
+      .flip-box-front2 {
+        background-color: rgba(77, 170, 77, 0.856);
+        color: black;
+        border-radius: 25px;
+      }
+      
+      /* Style the back side */
+      .flip-box-back2 {
+        background-image: url("./img/ai.jpeg.jpg");
+        color: white;
+        transform: rotateY(180deg);
+        border-radius: 25px;
+      }
+      .flip-box-front2, .flip-box-text2 {
+        text-align: center;
+        font-family: Copperplate, Copperplate Gothic Light, fantasy;
+        border-radius: 25px;
+      } 
+
+      .flip-box3 {
+        background-color: transparent;
+        width: 200px;
+        height: 200px;
+        border: 1px solid #f1f1f1;
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+        border-radius: 25px;
+      }
+      
+      /* This container is needed to position the front and back side */
+      .flip-box-inner3 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+        border-radius: 25px;
+      }
+      
+      /* Do an horizontal flip when you move the mouse over the flip box container */
+      .flip-box3:hover .flip-box-inner3 {
+        transform: rotateY(180deg);
+        border-radius: 25px;
+      }
+      
+      /* Position the front and back side */
+      .flip-box-front3, .flip-box-back3 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+        border-radius: 25px;
+      }
+      
+      /* Style the front side */
+      .flip-box-front3 {
+        background-color: rgba(77, 170, 77, 0.856);
+        color: black;
+        border-radius: 25px;
+      }
+      
+      /* Style the back side */
+      .flip-box-back3 {
+        background-image: url("./img/botnew.jpeg.jpg");
+        color: white;
+        transform: rotateY(180deg);
+        border-radius: 25px;
+      }
+      .flip-box-front3, .flip-box-text3 {
+        text-align: center;
+        font-family: Copperplate, Copperplate Gothic Light, fantasy;
+        border-radius: 25px;
+      }
+      .whatsapp-icon {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999;
+      }
+      
+      .whatsapp-icon img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .whatsapp-icon img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+      }
+      
+
+
+  
+

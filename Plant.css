@@ -1,0 +1,241 @@
+body {
+    
+  padding: 0;
+  margin: 0;
+  background-image: url('./img/mystyleplant.jpeg');
+  
+  
+
+
+}
+/* Style the navigation bar */
+.navbar {
+width: 100%;
+background-color: black;
+overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+float: left;
+text-align: center;
+padding: 12px;
+color: white;
+text-decoration: none;
+font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+background-color: #000;
+}
+
+/* Current/active navbar link */
+.active {
+background-color: #04AA6D;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+.navbar a {
+float: none;
+display: block;
+}
+}
+/*end of style navBar */
+.image-container {  /*line*/
+background-image: url("img_nature.jpg"); /* The image used - important! */
+background-size: cover;
+position: relative; /* Needed to position the cutout text in the middle of the image */
+height: 300px; /* Some height */
+}
+h1 {
+position: relative;
+padding: 0;
+margin: 0;
+margin-top: 2rem;
+font-family: "Raleway", sans-serif;
+font-weight: 300;
+font-size: 40px;
+color: #080808;
+-webkit-transition: all 0.4s ease 0s;
+-o-transition: all 0.4s ease 0s;
+transition: all 0.4s ease 0s;
+margin-bottom: 0px;
+}
+
+h1 span {
+display: block;
+font-size: 0.5em;
+line-height: 1.3;
+margin-bottom: 0px;
+}
+h1 em {
+font-style: normal;
+font-weight: 600;
+margin-bottom: 0px;
+}
+
+/* === HEADING STYLE #1 === */
+.one h1 {
+text-align: center;
+text-transform: uppercase;
+padding-bottom: 5px;
+margin-top: 5px;
+margin-bottom: 0px;
+color: white;
+font-family: 'Playfair Display', serif;
+}
+.one h1:before {
+width: 28px;
+height: 5px;
+display: block;
+content: "";
+position: absolute;
+bottom: 3px;
+left: 50%;
+margin-left: -14px;
+background-color: #b80000;
+margin-bottom: 0px;
+}
+.one h1:after {
+width: 100px;
+height: 1px;
+display: block;
+content: "";
+position: relative;
+margin-top: 25px;
+left: 50%;
+margin-left: -50px;
+background-color: #b80000;
+margin-bottom: 0px;
+}  
+
+
+
+
+.container {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 2rem 4rem;
+margin-bottom: 0px;
+}
+.title3 {
+text-align: center;
+font-family: Copperplate, Copperplate Gothic Light, fantasy;
+margin-bottom: 0px;
+color: whitesmoke
+}
+
+.card {
+width: 200px;
+background: rgba(255, 255, 255, 0.205);
+border-radius: .5rem;
+overflow: hidden;
+margin-bottom: 0px;
+}
+
+.card .img-wrapper1 {
+width: 100%;
+height: 218px;
+margin-bottom: 0px;
+}
+.card .img-wrapper2 {
+width: 100%;
+height: 200px;
+margin-bottom: 0px;
+}
+.card .img-wrapper3 {
+width: 100%;
+height: 200px;
+margin-bottom: 0px;
+}
+.card .img-wrapper4 {
+width: 100%;
+height: 218px;
+margin-bottom: 0px;
+}
+.card .img-wrapper5 {
+width: 100%;
+height: 204px;
+margin-bottom: 0px;
+}
+
+.card .img-wrapper1 img {
+width: 100%;
+height: 90%;
+margin-bottom: 0px;
+}
+.card .img-wrapper2 img {
+width: 100%;
+height: 100%;
+margin-bottom: 0px;
+}
+.card .img-wrapper3 img {
+width: 100%;
+height: 100%;
+margin-bottom: 0px;
+}
+.card .img-wrapper4 img {
+width: 100%;
+height: 91.5%;
+margin-bottom: 0px;
+}
+.card .img-wrapper5 img {
+width: 100%;
+height: 100%;
+margin-bottom: 0px;
+}
+
+.text-wrapper {
+padding: 1rem;
+font-family: Copperplate, Copperplate Gothic Light, fantasy;
+margin-bottom: 0px;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+background-color: #eee;
+color: #444;
+cursor: pointer;
+padding: 18px;
+width: 100%;
+border: none;
+text-align: left;
+outline: none;
+font-size: 15px;
+text-align: center;
+font-family:Copperplate, Copperplate Gothic Light, fantasy; 
+margin-bottom: 0px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active.collapsible:hover {
+background-color: #ccc;
+margin-bottom: 0px;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+padding: 0 18px;
+display: none;
+overflow: hidden;
+background-color: #f1f1f1;
+text-align: center;
+font-family:Copperplate, Copperplate Gothic Light, fantasy;
+margin-bottom: 0px; 
+}
+.video {
+align-items: center;
+text-align: center;
+margin-bottom: 0px;
+
+
+}
+
+
+
+
+
+  
